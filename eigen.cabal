@@ -1693,14 +1693,8 @@ source-repository head
 library
     exposed-modules:
       Eigen.Matrix
-      Eigen.Matrix.Mutable
-      Eigen.SparseMatrix
-      Eigen.SparseMatrix.Mutable
-      Eigen.Parallel
-      Eigen.Internal
-      Eigen.Solver.LA
-      Eigen.Solver.SparseLA
-
+      Eigen.Raw
+      Eigen.Generic
     hs-source-dirs:
       src
     ghc-options:
