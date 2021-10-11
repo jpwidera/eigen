@@ -11,4 +11,4 @@ solution = do
 
 
 main :: IO ()
-main = print solution
+main = solution

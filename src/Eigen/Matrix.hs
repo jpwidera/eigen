@@ -11,6 +11,7 @@ import qualified Data.Vector.Unboxed as VU
 
 data family Matrix a 
 newtype instance Matrix Float = F_Matrix (Raw.Matrix Float)
+  deriving Show
 newtype instance Matrix Double = D_Matrix (Raw.Matrix Double)
 
 instance Generic.Matrix Matrix Float where
