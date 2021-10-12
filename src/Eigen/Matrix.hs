@@ -16,9 +16,9 @@ newtype instance Matrix Double = D_Matrix (Raw.Matrix Double)
 
 instance Generic.Matrix Matrix Float where
   empty = F_Matrix (Raw.Matrix Raw.DynamicRows Raw.DynamicCols (VU.empty)) :: Matrix Float
---
---instance Generic.Matrix Matrix Double where
---  empty = D_Matrix (Raw.Matrix Raw.DynamicRows Raw.DynamicCols (VU.empty)) :: Matrix Double
---empty :: (VU.Unbox a) => Matrix a
+
+instance Generic.Matrix Matrix Double where
+  empty = D_Matrix (Raw.Matrix Raw.DynamicRows Raw.DynamicCols (VU.empty)) :: Matrix Double
+
 empty = F_Matrix Raw.empty
 
