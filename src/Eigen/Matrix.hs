@@ -20,5 +20,5 @@ instance Generic.Matrix Matrix Float where
 instance Generic.Matrix Matrix Double where
   empty = D_Matrix (Raw.Matrix Raw.DynamicRows Raw.DynamicCols (VU.empty)) :: Matrix Double
 
-empty = F_Matrix Raw.empty
+--empty = F_Matrix Raw.empty
 
